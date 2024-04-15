@@ -122,6 +122,18 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
+  let ghia = select('.ghia')
+  if (ghia) {
+    const toggleghia = () => {
+      if (window.scrollY > 100) {
+        ghia.classList.add('active')
+      } else {
+        ghia.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleghia)
+    onscroll(document, toggleghia)
+  }
 
   /**
    * Mobile nav toggle
