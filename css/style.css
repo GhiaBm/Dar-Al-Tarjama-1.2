@@ -484,6 +484,8 @@ section {
   border-top: 3px black solid;
   border-bottom: 3px black solid;
   padding-bottom: 8%;
+  top: -5%;
+  position: relative;
 }
 #hero .btn-get-started:hover {
   background: #fff;
