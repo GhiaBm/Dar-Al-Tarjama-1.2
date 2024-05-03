@@ -688,10 +688,12 @@ section {
   color: #111;
 }
 #services .description {
-  font-size: 14px;
+  font-size: 18px;
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
+  color: black !important;
+  
 }
 #call-to-action {
   background: linear-gradient(rgba(142, 0, 0, 0.71), rgba(166, 0, 0, 0.3)) 0 0 /
