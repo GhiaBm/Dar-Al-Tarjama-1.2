@@ -1565,7 +1565,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "EB Garamond", serif;
-  color: #eee;
+  color: #eee !important;
 }
 #footer .footer-top .social-links a {
   display: inline-block;
