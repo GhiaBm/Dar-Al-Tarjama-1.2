@@ -1230,12 +1230,12 @@ section {
 
 @media (min-width: 1200px) {
   #hero {
-    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_7.gif");
+    background-image: url("Comp\ 1_7.gif");
   }
 }
 @media (max-width: 1200px) {
   #hero {
-    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_5.gif");
+    background-image: url("Comp\ 1_5.gif");
   }
 }
 @media (max-width: 950px) {
@@ -1246,12 +1246,12 @@ section {
     left: 5%;
   }
   #hero {
-    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_4.gif");
+    background-image: url("Comp\ 1_4.gif");
   }
 }
 @media (max-width: 650px) {
   #hero {
-    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_3.gif");
+    background-image: url("Comp\ 1_3.gif");
   }
 }
 #header .logo {
