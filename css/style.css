@@ -29,6 +29,7 @@ p {
   position: relative;
 }
 #featured-services,
+#featured-services1,
 #hero {
   background: #000;
 }
@@ -37,7 +38,8 @@ p {
   background-color: #fff;
 }
 #about,
-#services {
+#services,
+#services1 {
   padding: 60px 0 40px;
 }
 #clients,
@@ -161,12 +163,15 @@ h6 {
   border-left: 4px solid #af1928ff;
 }
 #call-to-action .cta-btn,
+#call-to-action1 .cta-btn,
 #hero .btn-get-started {
   letter-spacing: 1px;
   font-family: "EB Garamond", serif;
 }
 #call-to-action p,
+#call-to-action1 p,
 #featured-services h4 a,
+#featured-services1 h4 a,
 #header .logo a,
 #portfolio .portfolio-item figure .link-details:hover i,
 #portfolio .portfolio-item figure .link-preview:hover i,
@@ -245,9 +250,11 @@ h6 {
 #about .about-col:hover i,
 #contact .contact-info a:hover,
 #featured-services h4 a:hover,
+#featured-services1 h4 a:hover,
 #footer .footer-top .footer-links ul a:hover,
 #portfolio .portfolio-item .portfolio-info h4 a:hover,
 #services .box:hover .title a,
+#services1 .box:hover .title a,
 #team .member .social a:hover,
 .blog .blog-author .social-links a:hover,
 .blog .blog-pagination,
@@ -572,24 +579,29 @@ section {
     display: inline-block;
   }
 }
-#featured-services .box {
+#featured-services .box,
+#featured-services1 .box {
   padding: 30px 20px;
 }
-#featured-services .box-bg {
+#featured-services .box-bg,
+#featured-services1 .box-bg {
   background-image: linear-gradient(0deg, #000 0, #242323 50%, #000 100%);
 }
-#featured-services i {
+#featured-services i,
+#featured-services1 i {
   color: #af1928ff;
   font-size: 48px;
   display: inline-block;
   line-height: 1;
 }
-#featured-services h4 {
+#featured-services h4,
+#featured-services1 h4 {
   font-weight: 400;
   margin: 15px 0;
   font-size: 18px;
 }
-#featured-services p {
+#featured-services p,
+#featured-services1 p {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
@@ -656,7 +668,8 @@ section {
   margin-bottom: 0;
   padding: 0 20px 20px;
 }
-#services {
+#services,
+#services1 {
   background: 0 0 / cover #fff;
 }
 #footer .footer-top .footer-contact,
@@ -664,49 +677,57 @@ section {
 #footer .footer-top .footer-links,
 #footer .footer-top .footer-newsletter,
 #services .box,
+#services1 .box,
 .blog .blog-comments,
 .blog .entry-single,
 .blog .sidebar .sidebar-item {
   margin-bottom: 30px;
 }
-#services .icon {
+#services .icon,
+#services1 .icon {
   float: left;
 }
-#services .icon i {
+#services .icon i,
+#services1 .icon i {
   color: #af1928ff;
   font-size: 36px;
   line-height: 0;
   transition: 0.5s;
 }
-#services .title {
+#services .title,
+#services1 .title {
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
-#services .title a {
+#services .title a,
+#services1 .title a {
   color: #000;
 }
-#services .description {
+#services .description,
+#services1 .description {
   font-size: 18px;
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
   color: black !important;
-  
 }
-#call-to-action {
+#call-to-action,
+#call-to-action1 {
   background: linear-gradient(rgba(142, 0, 0, 0.71), rgba(166, 0, 0, 0.3)) 0 0 /
       cover,
     url(../img/call-to-action-bg.jpg) center center/cover fixed;
   padding: 60px 0;
 }
-#call-to-action h3 {
+#call-to-action h3,
+#call-to-action1 h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
-#call-to-action .cta-btn {
+#call-to-action .cta-btn,
+#call-to-action1 .cta-btn {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -718,7 +739,8 @@ section {
   border: 2px solid #fff;
   color: #fff;
 }
-#call-to-action .cta-btn:hover {
+#call-to-action .cta-btn:hover,
+#call-to-action1 .cta-btn:hover {
   background: #af1928ff;
   border: 2px solid #af1928ff;
 }
@@ -1130,6 +1152,289 @@ section {
   background: #fff;
   text-align: center;
   padding: 15px;
+}
+@media (max-width: 950px) {
+  .buttonLearnMore {
+    padding-bottom: 8%;
+    top: -5%;
+    left: 10%;
+  }
+  .buttonGetAQuotation {
+    top: 100%;
+    left: 5%;
+  }
+}
+.back-to-top:hover {
+  background-color: #ff2e2e;
+}
+.title:hover {
+  color: #af1928ff;
+}
+.btn-flip2 {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  top: 50%;
+  left: 6%;
+}
+.btn-flip2:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip2:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip2:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #af1928;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #000;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+  font-weight: bolder;
+}
+.btn-flip2:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #fff;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #af1928;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+}
+
+@media (min-width: 950px) {
+  .gettingstartedbutton {
+    left: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero {
+    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_7.gif");
+  }
+}
+@media (max-width: 1200px) {
+  #hero {
+    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_5.gif");
+  }
+}
+@media (max-width: 950px) {
+  .images12 {
+    display: none;
+  }
+  .gettingstartedbutton {
+    left: 5%;
+  }
+  #hero {
+    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_4.gif");
+  }
+}
+@media (max-width: 650px) {
+  #hero {
+    background-image: url("/Dar-Al-Tarjama-1.2-main/Comp\ 1_3.gif");
+  }
+}
+#header .logo {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-left: 4px solid transparent;
+}
+.header-scrolled {
+  background: rgba(255, 226, 229, 0.702) !important;
+  height: 80px !important;
+}
+#more {
+  display: none;
+}
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+#more4 {
+  display: none;
+}
+#more5 {
+  display: none;
+}
+#more6 {
+  display: none;
+}
+
+#more7 {
+  display: none;
+}
+#more8 {
+  display: none;
+}
+#more9 {
+  display: none;
+}
+#more10 {
+  display: none;
+}
+#more11 {
+  display: none;
+}
+#more12 {
+  display: none;
+}
+#more13 {
+  display: none;
+}
+#more14 {
+  display: none;
+}
+#more15 {
+  display: none;
+}
+#more16 {
+  display: none;
+}
+.title2 {
+  position: relative;
+  left: 40px;
+  top: 50px;
+}
+@media (min-width: 900px) {
+  .sirr {
+    width: 25% !important;
+  }
+  #secondseries {
+    position: relative;
+    top: 300px;
+  }
+  .aboutnum1 {
+    height: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .aboutnum1 {
+    height: fit-content;
+  }
+
+  #secondseries {
+    position: relative;
+    top: 100px;
+  }
+  .sirr {
+    position: relative;
+    top: 100px;
+    margin: 0 20px 200px 20px;
+    width: 200px;
+  }
+  #Special {
+    position: relative;
+    top: 100px !important;
+  }
+}
+
+.ghia {
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  left: 15px;
+  background-color: #000 !important;
+  color: #25d366;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: 0.4s;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  display: flex !important;
+}
+strong {
+  color: white;
+}
+.testimonial-item {
+  position: relative;
+  top: 20%;
+}
+@media (max-width: 480px) {
+  .aboutnum1 {
+    height: fit-content;
+  }
+  .about-cols {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #secondseries {
+    position: relative;
+    top: 100px;
+  }
+  .sirr {
+    position: relative;
+    top: 100px;
+    margin: 0 0px 200px 0px;
+    width: 200px;
+  }
+}
+
+.iconssir {
+  border-color: #af1928ff !important;
+  background-color: #fff !important;
+}
+.iconssir:hover {
+  background-color: #af1928ff !important;
+}
+#about,
+.aboutlife {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+#header .logo a {
+  color: black;
+  font-family: "EB Garamond", serif;
+}
+@media (max-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+}
+.navbar a {
+  color: black;
+  font-family: "EB Garamond", serif;
+}
+.img-fluid1 {
+  max-height: 100px !important;
+  padding-top: 12px;
 }
 #contact .php-email-form .loading:before {
   content: "";
